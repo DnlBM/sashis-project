@@ -1,0 +1,83 @@
+.button-1{
+    /* display: flex; */
+    background-color: red;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 30px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    padding: 0;
+    /* column-gap: 10px; */
+}
+.button-2{
+  background-color: transparent;
+  border: none;
+  color: red;
+  width: 150px;
+  height: 30px;
+}
+
+.button-1:hover, .button-2:hover{
+  cursor: pointer;
+}
+
+.cta-text{
+    margin-right: 15px;
+}
+
+.arrow{
+    background-color: white;
+    width: 40px;
+    height: 4px;
+    /* align-self: center; */
+}
+
+.arrow::after, .arrow::before{
+    content: "";
+    /* position: absolute; */
+    width: 100px;
+    height: 10px;
+    right: -8px;
+    background-color: black;
+}
+
+.arrow::after {
+    /* top: -12px; */
+    transform: rotate(45deg);
+  }
+  
+  .arrow::before {
+    /* top: 12px; */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+  }
+/* .arrow {
+    position: absolute;
+    margin-left: 10px;
+    top: 13px;
+    width: 5%;
+    height: 4px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+  } */
+  
+  /* .arrow::after, .arrow::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 10px;
+    right: -8px;
+    background-color: #fff;
+  }
+  
+  .arrow::after {
+    top: -12px;
+    transform: rotate(45deg);
+  }
+  
+  .arrow::before {
+    top: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+  } */
